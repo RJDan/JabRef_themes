@@ -1,0 +1,120 @@
+.root {
+/* set specific colours */
+
+    -jr-red: #b71c1f;
+    -jr-light-red: #db1d2b;
+
+    -jr-green: #1cb631;
+    -jr-light-green: #28d93c;
+
+    -jr-blue: #0bb5f5;
+    -jr-mid-blue: #1d7bd6;
+    -jr-light-blue: #0bb5f5;
+
+    -jr-purple: #b72486;
+    -jr-light-purple: #d927a8;
+    
+    -jr-yellow: #f4d47c;
+    -jr-orange: #b77620;
+
+    -jr-black: #121212;
+    
+    -jr-dark-grey: #444444;
+    -jr-dark-grey2: #404040;
+    -jr-dark-grey3: #2c2e3b;
+    -jr-dirt-grey: #878683;
+
+    -jr-light-grey: #bebebe;
+    -jr-light-grey2: #dddddd;
+
+    -jr-white: #ffffff;
+
+    -jr-turquoise: #1fd2a5;
+
+    -jr-theme: -jr-light-blue;
+    -jr-accent: -jr-mid-blue;
+    -jr-selected: -jr-accent;
+    -jr-hover: -jr-dirt-grey;
+
+    -jr-base: -jr-dark-grey;
+
+    -jr-background-alt: -jr-dark-grey;
+    -jr-menu-background: -jr-black;
+    -jr-toolbar: -jr-menu-background;
+    -jr-sidepane-background: -jr-dark-grey;
+    -jr-search-background: -jr-dark-grey3;
+
+    -jr-sidepane-header-background: -jr-background-alt;
+    -jr-group-hits-bg: -jr-background-alt;
+    -jr-group-hits-fg: -fx-light-text-color;
+    -fx-control-inner-background: -jr-black;
+
+    -fx-control-inner-background-alt: -fx-control-inner-background;
+
+    -fx-dark-text-color: -jr-black;
+/*  -fx-mid-text-color: #7d8591;*/
+    -fx-mid-text-color: -jr-white;
+/*  -fx-light-text-color: #9aa3af;*/
+    -fx-light-text-color: -jr-white;
+    -jr-separator: -jr-dark-grey2;
+    -fx-outer-border: -jr-light-grey2;
+
+
+    -jr-icon: -fx-light-text-color;
+    -jr-icon-active: derive(-fx-light-text-color, 50%);
+    -jr-icon-background-active: -jr-hover;
+    -jr-icon-background-armed: -jr-turquoise;
+
+    -jr-menu-foreground: -fx-light-text-color;
+    -jr-menu-item-foreground: -fx-light-text-color;
+    -jr-menu-forground-active: derive(-fx-light-text-color, 50%);
+
+    -jr-scrollbar-thumb: -fx-light-text-color;
+    -jr-scrollbar-track: derive(-fx-control-inner-background, -90%);
+
+    -fx-focused-text-base-color: -fx-dark-text-color;
+
+    -jr-tooltip-fg: derive(-fx-light-text-color, 50%);
+
+    -jr-drag-target: -jr-accent;
+    -jr-drag-target-hover: -jr-accent;
+}
+
+#previewBody {
+    background-color: -jr-black; /* -fx-control-inner-background*/
+    color: -jr-white;
+}
+
+.table-view .groupColumnBackground {
+    -fx-stroke: -jr-dirt-grey;
+}
+
+.code-area .lineno {
+    -fx-background-color: -jr-background-alt;
+    -fx-text-fill: -fx-mid-text-color;
+}
+
+.text-unchanged {
+    -fx-fill: -fx-light-text-color;
+}
+
+.radio-button > .radio {
+    -fx-background-color: -fx-light-text-color, -fx-control-inner-background;
+}
+
+.numberColumn > .hits:any-selected {
+    -fx-background-color: derive(-jr-dirt-grey, 70%);
+}
+
+.numberColumn > .hits:all-selected {
+    -fx-background-color: -jr-light-grey;
+}
+
+#preferencesContainer .tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: -jr-background;
+}
+
+/* Biblatex Source Code */
+.code-area .text {
+    -fx-font-family: ubuntu;
+}
